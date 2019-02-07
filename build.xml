@@ -18,6 +18,8 @@
                     <src path="${src.dir}" />
 		</javac>
                 <javac destdir="${tests.classes.dir}" debug="true"  includeantruntime="false">
+	            <classpath location="../MVCSimpleProject/lib/junit-4.7.jar" />
+                    <classpath location="${classes.dir}" />
                     <src path="${tests.src.dir}" />
 		</javac>
 	</target>
@@ -32,6 +34,8 @@
 		<classpath location="lib/hamcrest-core-1.3.jar" />
 	-->
 	<classpath location="../MVCSimpleProject/lib/junit-4.7.jar" />
+        <classpath location="${classes.dir}" />
+        <classpath location="${tests.classes.dir}" />
 
 	<formatter type="xml" />
 	<formatter type="plain" />

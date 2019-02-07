@@ -10,7 +10,7 @@ public class ControllerTest {
 	@Test
 	public void test_welcome_message() {
 		Controller obj = new Controller();
-		assertEquals("welcome", obj.hello());
+		assertEquals("Hello!", obj.hello());
 	}
 
 }
